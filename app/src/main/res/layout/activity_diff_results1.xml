@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EasyQuestions1"
+    android:background="@drawable/splash_background">
+
+    <FrameLayout
+        android:id="@+id/diff_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/diff_bar">
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+
+        android:textColor="#006b8e"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="40"
+        android:shadowColor="#757575"
+        />
+
+    <RadioGroup
+        android:id="@+id/rad_grp_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/choose_diffmenu_btn"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_avg_1a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Hemorage"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_avg_1b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Hemorrhage"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rad_grp_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_1"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_avg_2a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Occurence"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_avg_2b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Occurrence"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rad_grp_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_2"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_avg_3a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Reminisce"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_avg_3b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Reminice"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rad_grp_4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_3"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_avg_4a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Corruptable"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_avg_4b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Corruptible"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/choose_diffmenu_btn"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/diff_bar"
+        android:text="Choose Difficulty"
+        android:textSize="20sp"
+        android:textColor="#006b8e"
+        android:background="@drawable/custom_diffmenu_button"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtScoreEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rad_grp_4"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="[Score:]"
+        android:textSize="30sp"/>
+
+</RelativeLayout>

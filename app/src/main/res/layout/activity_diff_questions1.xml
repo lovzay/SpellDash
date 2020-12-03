@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EasyQuestions1"
+    android:background="@drawable/splash_background">
+
+    <FrameLayout
+        android:id="@+id/diff_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/diff_bar">
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Difficult Questions"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+
+        android:textColor="#006b8e"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="40"
+        android:shadowColor="#757575"
+        />
+
+    <RadioGroup
+        android:id="@+id/rad_grp_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtInstructions"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_diff_1a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Auxiliary"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_diff_1b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Aucilliaree"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rad_grp_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_1"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_diff_2a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Camoflauge"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_diff_2b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Camouflage"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rad_grp_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_2"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_diff_3a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Buoyancy"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_diff_3b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Buouyancy"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rad_grp_4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_3"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_diff_4a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Bureaucracy"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_diff_4b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Beaurocracy"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/timerbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="0"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rad_grp_4"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Choose the word with the correct spelling before the timer runs out!"
+        android:layout_below="@id/diff_bar"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EasyQuestions1"
+    android:background="@drawable/splash_background">
+
+    <FrameLayout
+        android:id="@+id/easy_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/easy_bar">
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Easy Questions"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+
+        android:textColor="#006b8e"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="40"
+        android:shadowColor="#757575"
+        />
+
+    <RadioGroup
+        android:id="@+id/rad_grp_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtInstructions"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_easy_1a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Write"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_easy_1b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Wryte"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rad_grp_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_1"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_easy_2a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Strech"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_easy_2b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Stretch"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rad_grp_3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_2"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_easy_3a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Cellery"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_easy_3b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Celery"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/rad_grp_4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rad_grp_3"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rad_easy_4a"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Birthday"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:id="@+id/rad_easy_4b"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Berthday"
+            android:textSize="22sp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/checkbox_selector_easy"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/timerbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="0"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rad_grp_4"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Choose the word with the correct spelling before the timer runs out!"
+        android:layout_below="@id/easy_bar"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        />
+</RelativeLayout>
